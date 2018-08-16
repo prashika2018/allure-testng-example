@@ -55,6 +55,11 @@ public class SimpleTest {
         fail("This test should be failed");
     }
 
+    @Test
+    public void ignoreTest() {
+        fail("This test should be ignored");
+    }
+
     @Test(dependsOnMethods = "failedTest")
     public void skippedByDependencyTest() {
     }
