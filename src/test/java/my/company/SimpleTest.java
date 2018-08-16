@@ -55,6 +55,16 @@ public class SimpleTest {
         fail("This test should be failed");
     }
 
+    @Test
+    public void runFailedTest() {
+        fail("This test should be run only failed test");
+    }
+
+    @Test
+    public void skipFailedTest() {
+        fail("This test should be skipp failed test");
+    }
+
     @Test(dependsOnMethods = "failedTest")
     public void skippedByDependencyTest() {
     }
